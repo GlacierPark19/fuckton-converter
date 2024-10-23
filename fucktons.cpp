@@ -2,8 +2,11 @@
 
 void runProgram()
 {
-    drawMenu();
-    menuSelect();
+    while (exitProgram == false)
+    {
+        drawMenu();
+        menuSelect();
+    }
 }
 
 void drawMenu()
@@ -13,9 +16,9 @@ void drawMenu()
     cout << "Please select an option:" << endl;
     cout << "1: Metric to Fucktons" << endl;
     cout << "2: Imperial to Fucktons" << endl;
-    // cout << "3: Fucktons to Metric" << endl;
-    // cout << "4: Fucktons to Imperial" << endl;
-    cout << "3: Exit" << endl;
+    cout << "3: Fucktons to Metric" << endl;
+    cout << "4: Fucktons to Imperial" << endl;
+    cout << "5: Exit" << endl;
     cout << "*************************************************" << endl;
 }
 
@@ -23,43 +26,39 @@ void menuSelect()
 {
     string tempString;
     int choiceInt;
-    bool exit = false;
     getline(cin, tempString);
     choiceInt = stoi(tempString);
-    while (exit == false)
+    switch (choiceInt)
     {
-        switch (choiceInt)
-        {
 
-        case 1:
-            mtf();
-            break;
+    case 1:
+        mtf();
+        break;
 
-        case 2:
-            itf();
-            break;
+    case 2:
+        itf();
+        break;
 
-        case 3:
-            exit = true;
-            break;
+    case 3:
 
-        case 4:
+        break;
 
-            break;
+    case 4:
 
-        case 5:
-            exit = true;
-            break;
+        break;
 
-        case 69420:
-            cout << "Its time to go outside and touch grass :)  " << endl;
-            exit = true;
-            break;
+    case 5:
+        exitProgram = true;
+        break;
 
-        default:
+    case 69420:
+        cout << "Its time to go outside and touch grass :)  " << endl;
+        exitProgram = true;
+        break;
 
-            break;
-        }
+    default:
+
+        break;
     }
 }
 
