@@ -26,7 +26,7 @@ void menuSelect()
     bool exit = false;
     getline(cin, tempString);
     choiceInt = stoi(tempString);
-    while (exit = false)
+    while (exit == false)
     {
         switch (choiceInt)
         {
@@ -118,7 +118,7 @@ struct finalUnit buttTonMenu()
     cout << "3: Asstons" << endl;
     cout << "4: Shitloads" << endl;
     cout << "5: Shittons" << endl;
-    cout << "6: fuckloads" << endl;
+    cout << "6: Fuckloads" << endl;
     cout << "7: Fucktons" << endl;
 
     getline(cin, temp);
@@ -146,25 +146,25 @@ struct finalUnit buttTonMenu()
         break;
 
     case 4:
-        final.unit = "Shitload";
+        final.unit = "Shitloads";
         final.value = tempInt;
         return final;
         break;
 
     case 5:
-        final.unit = "Shitton";
+        final.unit = "Shittons";
         final.value = tempInt;
         return final;
         break;
 
     case 6:
-        final.unit = "Fuckload";
+        final.unit = "Fuckloads";
         final.value = tempInt;
         return final;
         break;
 
     case 7:
-        final.unit = "Fuckton";
+        final.unit = "Fucktons";
         final.value = tempInt;
         return final;
         break;
