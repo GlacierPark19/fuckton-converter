@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 const double BUTTTON_IN_KILOS = 1763;
-bool exitProgram = false;
+extern bool exitProgram;
 int mtf();
 
 int itf();

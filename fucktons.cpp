@@ -2,6 +2,7 @@
 
 void runProgram()
 {
+
     while (exitProgram == false)
     {
         drawMenu();
