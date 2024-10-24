@@ -41,11 +41,11 @@ void menuSelect()
         break;
 
     case 3:
-
+        std::cout << "Due to me not having time, this functionality is NYI" << std::endl;
         break;
 
     case 4:
-
+        std::cout << "Due to me not having time, this functionality is NYI" << std::endl;
         break;
 
     case 5:
@@ -105,6 +105,10 @@ int itf()
 
     cout << "The final weight is: " << fuckTonWeight << " " << unit << endl;
     return 0;
+}
+
+int ftm()
+{
 }
 
 struct finalUnit buttTonMenu()
