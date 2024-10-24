@@ -68,18 +68,18 @@ int mtf()
 {
 
     string inString, unit;
-    double metricWeight, tempWeight, fuckTonWeight, buttLoadMeasurment;
+    double metricWeight, tempWeight, fuckTonWeight, buttLoadMeasurement;
     int expon;
 
     cout << "Please input starting weight (in Kilos)" << endl;
     getline(cin, inString);
     metricWeight = stod(inString);
-    buttLoadMeasurment = (metricWeight / BUTTTON_IN_KILOS);
+    buttLoadMeasurement = (metricWeight / BUTTTON_IN_KILOS);
     cout << "Enter unit of desired measurment: " << endl;
     struct finalUnit final = buttTonMenu();
     expon = final.value;
     unit = final.unit;
-    fuckTonWeight = pow(buttLoadMeasurment, expon);
+    fuckTonWeight = pow(buttLoadMeasurement, expon);
 
     cout << "The final weight is: " << fuckTonWeight << " " << unit << endl;
     return 0;
@@ -88,19 +88,19 @@ int mtf()
 int itf()
 {
     string inString, unit;
-    double imperialWeight, metricWeight, tempWeight, fuckTonWeight, buttLoadMeasurment;
+    double imperialWeight, metricWeight, tempWeight, fuckTonWeight, buttLoadMeasurement;
     int expon;
 
     cout << "Please input starting weight (in Pounds)" << endl;
     getline(cin, inString);
     imperialWeight = stod(inString);
     metricWeight = (imperialWeight / 2.205);
-    buttLoadMeasurment = (metricWeight / BUTTTON_IN_KILOS);
+    buttLoadMeasurement = (metricWeight / BUTTTON_IN_KILOS);
     cout << "Enter unit of desired measurment: " << endl;
     struct finalUnit final = buttTonMenu();
     expon = final.value;
     unit = final.unit;
-    fuckTonWeight = pow(buttLoadMeasurment, expon);
+    fuckTonWeight = pow(buttLoadMeasurement, expon);
 
     cout << "The final weight is: " << fuckTonWeight << " " << unit << endl;
     return 0;
